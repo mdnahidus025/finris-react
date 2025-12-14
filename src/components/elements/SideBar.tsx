@@ -1,12 +1,11 @@
 import React, { useContext } from 'react';
 import FinrisContext from '../context/FinrisContext';
 import { Link } from 'react-router';
-
+import logo from "../../assets/images/resources/logo-2.png"
 const SideBar: React.FC = () => {
     const context = useContext(FinrisContext);
     if (!context) throw new Error("Context Null");
-    const { isSidebar, setIsSidebar } = context;
-    if (isSidebar) console.log(isSidebar)
+    const { isSidebar, setIsSidebar } = context; 
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         const form = e.currentTarget;
@@ -24,7 +23,7 @@ const SideBar: React.FC = () => {
                         <div className="sidebar-info-contents">
                             <div className="content-inner">
                                 <div className="logo">
-                                    <a href="index.html"><img src="assets/images/resources/logo-2.png" alt="" /></a>
+                                    <Link to="/"><img src={logo} alt="" /></Link>
                                 </div>
                                 <div className="content-box">
                                     <h4>About Us</h4>

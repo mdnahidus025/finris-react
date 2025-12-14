@@ -15,16 +15,11 @@ const App: React.FC = () => {
   const { isMobile, isSearch, showVideoPopup } = context;
   const pathName = useLocation().pathname;
 
-
-
-
   return (
     <div className={`custom-cursor ${isMobile ? "locked" : ""} ${isSearch ? 'search-active' : ''}`}>
       <CustomCursor />
-
       <Outlet />
       {pathName === "/index-one-page" ? <MobileNavSingle /> : <MobileNav />}
-
       <SideBar />
       <SearchProp />
       <ScrollToTop />
