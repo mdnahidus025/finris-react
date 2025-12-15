@@ -11,8 +11,7 @@ import TextAnimation from "../../components/elements/TextAnimation";
 
 const WhyChooseOne: React.FC = () => {
     return (
-        <section className="why-choose-one">
-            {/* ✅ background-image in React uses style={{ backgroundImage: `url(...)` }} */}
+        <section className="why-choose-one"> 
             <div
                 className="why-choose-one__shape-bg" ></div>
 

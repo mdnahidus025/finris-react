@@ -13,8 +13,7 @@ const FooterTwo: React.FC = () => {
     };
 
     return (
-        <>
-            {/* Newsletter Section */}
+        <> 
             <section className="newsletter-two">
                 <div className="newsletter-two__big-text">Subscribe Newsletter</div>
                 <div className="container">

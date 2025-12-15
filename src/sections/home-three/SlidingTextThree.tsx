@@ -1,7 +1,5 @@
 import React from 'react';
 import Marquee from 'react-fast-marquee';
-
-
 const SlidingTextThree: React.FC = () => {
     const textItems = Array.from({ length: 50 }, () => 'PORTFOLIO');
     return (
@@ -20,10 +18,7 @@ const SlidingTextThree: React.FC = () => {
                                     <h2 data-hover={text} className="sliding-text-one__title">
                                         {text}
                                     </h2>
-                                </li>
-                                {/* <li>
-                                    <span></span>
-                                </li> */}
+                                </li> 
                             </React.Fragment>
                         ))}
                     </Marquee> 

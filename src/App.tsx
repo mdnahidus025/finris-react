@@ -14,12 +14,14 @@ const App: React.FC = () => {
   if (!context) throw new Error("Context is null")
   const { isMobile, isSearch, showVideoPopup } = context;
   const pathName = useLocation().pathname;
-
+  const isCurrent = (pathArray: string[]): boolean => {
+    return pathArray.includes(pathName);
+  };
   return (
     <div className={`custom-cursor ${isMobile ? "locked" : ""} ${isSearch ? 'search-active' : ''}`}>
       <CustomCursor />
       <Outlet />
-      {pathName === "/index-one-page" ? <MobileNavSingle /> : <MobileNav />}
+      {isCurrent(["/index-one-page", "/index2-one-page", "/index3-one-page"]) ? <MobileNavSingle /> : <MobileNav />}
       <SideBar />
       <SearchProp />
       <ScrollToTop />

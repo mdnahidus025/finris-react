@@ -1,9 +1,7 @@
 import React from "react";
-
-// ✅ Import local images
+ 
 import awardImg1 from "../../assets/images/resources/awards-one-img-1.jpg";
 import awardImg2 from "../../assets/images/resources/awards-one-img-2.jpg";
-
 import AdvanceCountUp from "../../components/elements/AdvanceCountUp";
 import TextAnimation from "../../components/elements/TextAnimation";
 
@@ -32,8 +30,7 @@ const AwardsA: React.FC = () => {
                                 <h2 className="section-title-two__title title-animation">
                                     <TextAnimation text={`We're proud to have received over 20`} textColor='black' isSpan={false} />
                                     <TextAnimation text='awards as a certified agency.' isSpan={false} textColor='#6232F8' />
-                                     <br /> 
-                                    <span></span>
+                                    
                                 </h2>
                             </div>
 

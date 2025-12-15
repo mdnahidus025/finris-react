@@ -4,6 +4,7 @@ import client_two from "../../assets/images/resources/banner-two-satisfied-clien
 import client_three from "../../assets/images/resources/banner-two-satisfied-client-1-3.jpg"
 import bannerImg from "../../assets/images/resources/banner-two-img-1.png"
 import customerImg from "../../assets/images/resources/banner-two-active-customer-img-1.png"
+import shapeImg from "../../assets/images/shapes/banner-two-shape-1.png"
 import { motion } from "framer-motion"
 import TypingEffect from '../../components/elements/TypingEffect';
 import { Link } from 'react-router';
@@ -13,7 +14,7 @@ const BannerThree: React.FC = () => {
         <section className="banner-two">
             <div className="banner-two__shape-bg"></div>
             <div className="banner-two__shape-1 img-bounce">
-                <img src="assets/images/shapes/banner-two-shape-1.png" alt="" />
+                <img src={shapeImg} alt="" />
             </div>
             <div className="container">
                 <div className="banner-two__inner">

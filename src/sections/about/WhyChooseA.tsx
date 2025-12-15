@@ -1,6 +1,5 @@
 import React from "react";
 
-// ✅ Import all your local image assets here
 import img1 from "../../assets/images/resources/why-choose-four-img-1.jpg";
 import img2 from "../../assets/images/resources/why-choose-four-img-2.jpg";
 import imgShape1 from "../../assets/images/shapes/why-choose-four-img-shape-1.png";

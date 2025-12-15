@@ -1,6 +1,5 @@
 import React from 'react';
-
-// Import images
+  
 import newsletterImg1 from "../../assets/images/resources/newsletter-one-img-1.jpg";
 import newsletterImg2 from "../../assets/images/resources/newsletter-one-img-2.png";
 import TextAnimation from '../../components/elements/TextAnimation';

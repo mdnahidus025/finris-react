@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion"
-// ✅ Import all images
+ 
 import topIcon from "../../assets/images/icon/process-one-top-icon-1.png";
 import star from "../../assets/images/shapes/process-one-star.png";
 import icon1 from "../../assets/images/icon/process-one-icon-1.png";
