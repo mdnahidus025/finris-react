@@ -1,7 +1,5 @@
-
-
 import { useEffect, useState, useCallback } from "react";
-
+import { useLocation } from "react-router";
 function throttle<T extends (...args: unknown[]) => void>(
     fn: T,
     delay: number
@@ -27,7 +25,12 @@ const ScrollToTop = () => {
             setVisible(false);
         }
     }, []);
+    const location = useLocation();
 
+    // Scroll to top when route changes
+    useEffect(() => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    }, [location.pathname]);
     useEffect(() => {
         const throttledScroll = throttle(toggleVisibility, 200);
 
@@ -56,4 +59,4 @@ const ScrollToTop = () => {
     );
 };
 
-export default ScrollToTop;
+export default ScrollToTop
