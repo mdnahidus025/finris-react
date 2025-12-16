@@ -37,6 +37,7 @@ import BlogDetails from "../../pages/blog/BlogDetails";
 import SingleHomeOne from "../../pages/single-home-one/SingleHomeOne";
 import SingleHomeTwo from "../../pages/single-home-two/SingleHomeTwo";
 import SingleHomeThree from "../../pages/single-home-three/SingleHomeThree";
+import InnerLayout from "../../pages/inner-layout/InnerLayout";
 
 const ROUTER = createBrowserRouter([
    {
@@ -57,129 +58,136 @@ const ROUTER = createBrowserRouter([
             element: <HomeThree />
          },
          {
-            path: 'about',
-            element: <About />
-         },
-         {
-            path: 'team',
-            element: <Team />
-         },
-         {
-            path: 'team-carousel',
-            element: <TeamCarousel />
-         },
-         {
-            path: 'team-details',
-            element: <TeamDetails />
-         },
-         {
-            path: 'portfolio',
-            element: <Portfolio />
-         },
-         {
-            path: 'portfolio-details',
-            element: <PortfolioDetails />
-         },
-         {
-            path: 'testimonials',
-            element: <Testimonial />
-         },
-         {
-            path: 'testimonial-carousel',
-            element: <TestimonialCarousel />
-         },
-         {
-            path: 'pricing',
-            element: <Pricing />
-         },
-         {
-            path: 'gallery',
-            element: <Gallery />
-         },
-         {
-            path: 'faq',
-            element: <Faq />
-         },
-         {
-            path: '404',
-            element: <Error />
+            path: "inner",
+            element: <InnerLayout />,
+            children: [
+               {
+                  path: 'about',
+                  element: <About />
+               },
+               {
+                  path: 'team',
+                  element: <Team />
+               },
+               {
+                  path: 'team-carousel',
+                  element: <TeamCarousel />
+               },
+               {
+                  path: 'team-details',
+                  element: <TeamDetails />
+               },
+               {
+                  path: 'portfolio',
+                  element: <Portfolio />
+               },
+               {
+                  path: 'portfolio-details',
+                  element: <PortfolioDetails />
+               },
+               {
+                  path: 'testimonials',
+                  element: <Testimonial />
+               },
+               {
+                  path: 'testimonial-carousel',
+                  element: <TestimonialCarousel />
+               },
+               {
+                  path: 'pricing',
+                  element: <Pricing />
+               },
+               {
+                  path: 'gallery',
+                  element: <Gallery />
+               },
+               {
+                  path: 'faq',
+                  element: <Faq />
+               },
+               {
+                  path: '404',
+                  element: <Error />
+               },
+               {
+                  path: "services",
+                  element: <Service />
+               },
+               {
+                  path: "digital-marketing",
+                  element: <DigitalMarketing />
+               },
+               {
+                  path: "web-design-development",
+                  element: <WebDesign />
+               },
+               {
+                  path: "search-engine-optimization",
+                  element: <SearchEngine />
+               },
+               {
+                  path: "design-and-branding",
+                  element: <DesignBranding />
+               },
+               {
+                  path: "app-development",
+                  element: <AppDevelopment />
+               },
+               {
+                  path: "products",
+                  element: <Product />
+               },
+               {
+                  path: "product-details",
+                  element: <ProductDetails />
+               },
+               {
+                  path: "cart",
+                  element: <Cart />
+               },
+               {
+                  path: "checkout",
+                  element: <Checkout />
+               },
+               {
+                  path: "wishlist",
+                  element: <Wishlist />
+               },
+               {
+                  path: "sign-up",
+                  element: <SignUp />
+               },
+               {
+                  path: "login",
+                  element: <Login />
+               },
+               {
+                  path: "blog",
+                  element: <Blog />
+               },
+               {
+                  path: "blog-carousel",
+                  element: <BlogCarousel />
+               },
+               {
+                  path: "blog-list",
+                  element: <BlogList />
+               },
+               {
+                  path: "blog-details",
+                  element: <BlogDetails />
+               },
+               {
+                  path: "contact",
+                  element: <Contact />
+               },
+            ]
          },
          {
             path: 'coming-soon',
             element: <Comming />
          },
-         {
-            path: "services",
-            element: <Service />
-         },
-         {
-            path: "digital-marketing",
-            element: <DigitalMarketing />
-         },
-         {
-            path: "web-design-development",
-            element: <WebDesign />
-         },
-         {
-            path: "search-engine-optimization",
-            element: <SearchEngine />
-         },
-         {
-            path: "design-and-branding",
-            element: <DesignBranding />
-         },
-         {
-            path: "app-development",
-            element: <AppDevelopment />
-         },
-         {
-            path: "products",
-            element: <Product />
-         },
-         {
-            path: "product-details",
-            element: <ProductDetails />
-         },
-         {
-            path: "cart",
-            element: <Cart />
-         },
-         {
-            path: "checkout",
-            element: <Checkout />
-         },
-         {
-            path: "wishlist",
-            element: <Wishlist />
-         },
-         {
-            path: "sign-up",
-            element: <SignUp />
-         },
-         {
-            path: "login",
-            element: <Login />
-         },
-         {
-            path: "blog",
-            element: <Blog />
-         },
-         {
-            path: "blog-carousel",
-            element: <BlogCarousel />
-         },
-         {
-            path: "blog-list",
-            element: <BlogList />
-         },
-         {
-            path: "blog-details",
-            element: <BlogDetails />
-         },
-         {
-            path: "contact",
-            element: <Contact />
-         },
+
          {
             path: "index-one-page",
             element: <SingleHomeOne />

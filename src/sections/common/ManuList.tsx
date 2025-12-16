@@ -1,9 +1,14 @@
 import React from 'react';
 import { BLOG_LINKS, HOME_LINKS, PAGES_LINKS, SERVICES_LINKS, SHOP_LINKS } from '../../contents/nav/nav';
 import { Link, useLocation } from 'react-router';
+
 const ManuList: React.FC = () => {
     const pathName: string = useLocation().pathname;
     const isCurrent = (pathArray: string[]): boolean => {
+        if (pathName.includes("/inner")) {
+            const cleanPath = pathName.replace(/^\/inner/, '');
+            return pathArray.includes(cleanPath);
+        }
         return pathArray.includes(pathName);
     };
     return (
@@ -19,8 +24,8 @@ const ManuList: React.FC = () => {
                 </ul>
             </li>
 
-            <li className={`${pathName === '/about' ? 'current' : ''}`}>
-                <Link to="/about">About</Link>
+            <li className={`${isCurrent(['/about']) ? 'current' : ''}`}>
+                <Link to="/inner/about">About</Link>
             </li>
             <li className={`dropdown ${isCurrent(["/team", "/team-carousel", "/team-details", "/portfolio", "/portfolio-details", "/testimonials", "/testimonial-carousel", "/pricing", "/gallery", "/faq", "/coming-soon", "/404"]) ? 'current' : ''}`}>
                 <a href="#">Pages</a>
@@ -63,7 +68,7 @@ const ManuList: React.FC = () => {
                 </ul>
             </li>
             <li className={`${isCurrent(["/contact"]) ? 'current' : ''}`}>
-                <Link to="/contact">Contact</Link>
+                <Link to="/inner/contact">Contact</Link>
             </li>
         </ul>
     );

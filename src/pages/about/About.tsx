@@ -1,8 +1,5 @@
 import React from 'react';
 import BannerCommon from '../../sections/common/BannerCommon';
-import HeaderCommon from '../../sections/common/HeaderCommon';
-import FooterCommon from '../../sections/common/FooterCommon';
-import StrickyHeaderCommon from '../../sections/common/StrickyHeaderCommon';
 import AboutUsThree from '../../sections/about/AboutUsThree';
 import WhyChooseA from '../../sections/about/WhyChooseA';
 import CounterA from '../../sections/about/CounterA';
@@ -12,8 +9,7 @@ import CtaCommon from '../../sections/common/CtaCommon';
 
 const About: React.FC = () => {
     return (
-        <div className="page-wrapper">
-            <HeaderCommon />
+        <>
             <BannerCommon title='About' subtitle='Us' breadcrumb='About Us' />
             <AboutUsThree />
             <WhyChooseA />
@@ -21,9 +17,8 @@ const About: React.FC = () => {
             <TestimonialsA />
             <AwardsA />
             <CtaCommon />
-            <FooterCommon />
-            <StrickyHeaderCommon />
-        </div>
+        </>
+
     );
 };
 

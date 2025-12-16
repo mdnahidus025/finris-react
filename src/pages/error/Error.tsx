@@ -1,14 +1,10 @@
 import React from 'react';
-import HeaderCommon from '../../sections/common/HeaderCommon';
 import BannerCommon from '../../sections/common/BannerCommon';
-import FooterCommon from '../../sections/common/FooterCommon';
-import StrickyHeaderCommon from '../../sections/common/StrickyHeaderCommon';
 import errorImg from "../../assets/images/resources/error-page-img1.png"
 import { Link } from 'react-router';
 const Error: React.FC = () => {
     return (
-        <div className="page-wrapper">
-            <HeaderCommon />
+        <>
             <BannerCommon title='404' subtitle='Error' breadcrumb='404 Error' />
             <section className="error-page">
                 <div className="container">
@@ -27,9 +23,7 @@ const Error: React.FC = () => {
                     </div>
                 </div>
             </section>
-            <FooterCommon />
-            <StrickyHeaderCommon />
-        </div>
+        </>
     );
 };
 
