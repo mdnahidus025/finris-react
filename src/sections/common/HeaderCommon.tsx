@@ -1,18 +1,13 @@
 import React, { useContext } from 'react';
-import { Link, useLocation } from 'react-router';
-
+import { Link  } from 'react-router';
 import logo2 from '../../assets/images/resources/logo-2.png';
-import FinrisContext from '../../components/context/FinrisContext';
-import { HOME_LINKS } from '../../contents/nav/nav';
+import FinrisContext from '../../components/context/FinrisContext'; 
+import ManuList from './ManuList';
 
 const HeaderCommon: React.FC = () => {
     const context = useContext(FinrisContext);
-    const pathName: string = useLocation().pathname;
     if (!context) throw new Error("Context Null");
     const { setIsMobile, setIsSearch } = context;
-    const isCurrent = (pathArray: string[]): boolean => {
-        return pathArray.includes(pathName);
-    };
     return (
         <header className="main-header-two">
             <div className="main-menu-two__top">
@@ -72,73 +67,7 @@ const HeaderCommon: React.FC = () => {
                         </div>
                         <div className="main-menu-two__main-menu-box">
                             <a href="#" className="mobile-nav__toggler" onClick={() => setIsMobile((pre) => !pre)}><i className="fa fa-bars"></i></a>
-                            <ul className="main-menu__list">
-                                <li className="dropdown">
-                                    <Link to="#">
-                                        Home
-                                    </Link>
-                                    <ul>
-                                        {
-                                            HOME_LINKS.map(li => <li key={li?.id}><Link to={li?.link}>{li?.value}</Link></li>)
-                                        }
-                                    </ul>
-                                </li>
-                                <li className={`${pathName === '/about' ? 'current' : ''}`}>
-                                    <Link to="/about">About</Link>
-                                </li>
-                                <li className={`dropdown ${isCurrent(["/team", "/team-carousel", "/team-details", "/portfolio", "/portfolio-details", "/testimonials", "/testimonial-carousel", "/pricing", "/gallery", "/faq", "/coming-soon", "/404"]) ? 'current' : ''}`}>
-                                    <a href="#">Pages</a>
-                                    <ul>
-                                        <li><Link to="/team">Team</Link></li>
-                                        <li><Link to="/team-carousel">Team Carousel</Link></li>
-                                        <li><Link to="/team-details">Team Details</Link></li>
-                                        <li><Link to="/portfolio">Portfolio</Link></li>
-                                        <li><Link to="/portfolio-details">Portfolio Details</Link></li>
-                                        <li><Link to="/testimonials">Testimonials</Link></li>
-                                        <li><Link to="/testimonial-carousel">Testimonial Carousel</Link></li>
-                                        <li><Link to="/pricing">Pricing</Link></li>
-                                        <li><Link to="/gallery">Gallery</Link></li>
-                                        <li><Link to="/faq">FAQs</Link></li>
-                                        <li><Link to="/404">404 Error</Link></li>
-                                        <li><Link to="/coming-soon">Coming Soon</Link></li>
-                                    </ul>
-                                </li>
-                                <li className={`dropdown ${isCurrent(["/services", "/digital-marketing", "/web-design-development", "/search-engine-optimization", "/design-and-branding", "/app-development"]) ? 'current' : ''}`}>
-                                    <a href="#">Services</a>
-                                    <ul>
-                                        <li><Link to="/services">Services</Link></li>
-                                        <li><Link to="/digital-marketing">Digital Marketing</Link></li>
-                                        <li><Link to="/web-design-development">Web Design & Development</Link></li>
-                                        <li><Link to="/search-engine-optimization">Search Engine Optimization</Link></li>
-                                        <li><Link to="/design-and-branding">Design & Branding</Link></li>
-                                        <li><Link to="/app-development">App Development</Link></li>
-                                    </ul>
-                                </li>
-                                <li className={`dropdown ${isCurrent(["/products", "/product-details", "/cart", "/checkout", "/wishlist", "/sign-up", "/login"]) ? 'current' : ''}`}>
-                                    <a href="#">Shop</a>
-                                    <ul>
-                                        <li><Link to="/products">Products</Link></li>
-                                        <li><Link to="/product-details">Product Details</Link></li>
-                                        <li><Link to="/cart">Cart</Link></li>
-                                        <li><Link to="/checkout">Checkout</Link></li>
-                                        <li><Link to="/wishlist">Wishlist</Link></li>
-                                        <li><Link to="/sign-up">Sign Up</Link></li>
-                                        <li><Link to="/login">Login</Link></li>
-                                    </ul>
-                                </li>
-                                <li className={`dropdown ${isCurrent(["/blog", "/blog-carousel", "/blog-list", "/blog-details"]) ? 'current' : ''}`}>
-                                    <a href="#">Blog</a>
-                                    <ul>
-                                        <li><Link to="/blog">Blog</Link></li>
-                                        <li><Link to="/blog-carousel">Blog Carousel</Link></li>
-                                        <li><Link to="/blog-list">Blog List</Link></li>
-                                        <li><Link to="/blog-details">Blog Details</Link></li>
-                                    </ul>
-                                </li>
-                                <li className={`${isCurrent(["/contact"]) ? 'current' : ''}`}>
-                                    <Link to="/contact">Contact</Link>
-                                </li>
-                            </ul>
+                            <ManuList />
                         </div>
                         <div className="main-menu-two__right">
                             <div className="main-menu-two__call">

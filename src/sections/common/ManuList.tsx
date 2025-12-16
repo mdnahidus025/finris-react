@@ -1,10 +1,14 @@
 import React from 'react';
 import { BLOG_LINKS, HOME_LINKS, PAGES_LINKS, SERVICES_LINKS, SHOP_LINKS } from '../../contents/nav/nav';
-import { Link } from 'react-router';
+import { Link, useLocation } from 'react-router';
 const ManuList: React.FC = () => {
+    const pathName: string = useLocation().pathname;
+    const isCurrent = (pathArray: string[]): boolean => {
+        return pathArray.includes(pathName);
+    };
     return (
         <ul className="main-menu__list">
-            <li className="dropdown">
+            <li className={`dropdown ${isCurrent(["/", "/index2", "/index3"]) ? 'current' : ''}`}>
                 <a href="#">Home</a>
                 <ul>
                     {
@@ -15,10 +19,10 @@ const ManuList: React.FC = () => {
                 </ul>
             </li>
 
-            <li>
+            <li className={`${pathName === '/about' ? 'current' : ''}`}>
                 <Link to="/about">About</Link>
             </li>
-            <li className="dropdown">
+            <li className={`dropdown ${isCurrent(["/team", "/team-carousel", "/team-details", "/portfolio", "/portfolio-details", "/testimonials", "/testimonial-carousel", "/pricing", "/gallery", "/faq", "/coming-soon", "/404"]) ? 'current' : ''}`}>
                 <a href="#">Pages</a>
                 <ul>
                     {
@@ -28,7 +32,7 @@ const ManuList: React.FC = () => {
                     }
                 </ul>
             </li>
-            <li className="dropdown">
+            <li className={`dropdown ${isCurrent(["/services", "/digital-marketing", "/web-design-development", "/search-engine-optimization", "/design-and-branding", "/app-development"]) ? 'current' : ''}`}>
                 <a href="#">Services</a>
                 <ul>
                     {
@@ -38,7 +42,7 @@ const ManuList: React.FC = () => {
                     }
                 </ul>
             </li>
-            <li className="dropdown">
+            <li className={`dropdown ${isCurrent(["/products", "/product-details", "/cart", "/checkout", "/wishlist", "/sign-up", "/login"]) ? 'current' : ''}`}>
                 <a href="#">Shop</a>
                 <ul>
                     {
@@ -48,7 +52,7 @@ const ManuList: React.FC = () => {
                     }
                 </ul>
             </li>
-            <li className="dropdown">
+            <li className={`dropdown ${isCurrent(["/blog", "/blog-carousel", "/blog-list", "/blog-details"]) ? 'current' : ''}`}>
                 <a href="#">Blog</a>
                 <ul>
                     {
@@ -58,7 +62,7 @@ const ManuList: React.FC = () => {
                     }
                 </ul>
             </li>
-            <li>
+            <li className={`${isCurrent(["/contact"]) ? 'current' : ''}`}>
                 <Link to="/contact">Contact</Link>
             </li>
         </ul>

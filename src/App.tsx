@@ -12,7 +12,7 @@ import MobileNavSingle from './components/elements/MobileNavSingle';
 const App: React.FC = () => {
   const context = useContext(FinrisContext);
   if (!context) throw new Error("Context is null")
-  const { isMobile, isSearch, showVideoPopup } = context;
+  const { isMobile, isSearch } = context;
   const pathName = useLocation().pathname;
   const isCurrent = (pathArray: string[]): boolean => {
     return pathArray.includes(pathName);
@@ -25,7 +25,7 @@ const App: React.FC = () => {
       <SideBar />
       <SearchProp />
       <ScrollToTop />
-      {showVideoPopup && <VideoPopup />}
+      <VideoPopup />
     </div>
   );
 };
