@@ -22,7 +22,7 @@ const ServicesList: React.FC = () => {
                         <img src={moreIcon} alt={item.name} />
                     </div>
                     <p>
-                        <Link to={item.link}>{item.name}</Link>
+                        <Link to={`/inner${item?.link}`}>{item.name}</Link>
                     </p>
                 </li>
             ))}

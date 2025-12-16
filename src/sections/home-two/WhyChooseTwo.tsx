@@ -29,7 +29,7 @@ const WhyChooseTwo: React.FC = () => {
                                 Start your journey with our <br /> exceptional services.
                             </h3>
                             <div className="cta-one__btn">
-                                <Link to="/contact">
+                                <Link to="/inner/contact">
                                     Get Started <span className="icon-right-arrow-1"></span>
                                 </Link>
                             </div>
@@ -138,7 +138,7 @@ const WhyChooseTwo: React.FC = () => {
                                         </div>
                                         <div className="content">
                                             <h4>
-                                                <Link to="/about">
+                                                <Link to="/inner/about">
                                                     Tailored Solutions for Optimal Results
                                                 </Link>
                                             </h4>
@@ -154,7 +154,7 @@ const WhyChooseTwo: React.FC = () => {
                                         </div>
                                         <div className="content">
                                             <h4>
-                                                <Link to="/about">
+                                                <Link to="/inner/about">
                                                     Exclusive Access to Expert Insights
                                                 </Link>
                                             </h4>

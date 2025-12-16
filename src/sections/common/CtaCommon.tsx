@@ -14,7 +14,7 @@ const CtaCommon: React.FC = () => {
                         <div className="cta-one__shape-bg" style={{ backgroundImage: `url(${BGImg})` }}></div>
                         <h3 className="cta-one__title">Start your journey with our <br /> exceptional services.</h3>
                         <div className="cta-one__btn">
-                            <Link to="/contact">Get Started <span className=" icon-right-arrow-1"></span></Link>
+                            <Link to="/inner/contact">Get Started <span className=" icon-right-arrow-1"></span></Link>
                         </div>
                     </div>
                 </div>

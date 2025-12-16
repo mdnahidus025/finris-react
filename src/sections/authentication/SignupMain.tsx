@@ -136,7 +136,7 @@ const SignupMain: React.FC = () => {
                             ))}
                         </div>
                         <div className="create-account text-center">
-                            <p>Already have an account? <Link to={"/login"}>Login Here</Link></p>
+                            <p>Already have an account? <Link to={"/inner/login"}>Login Here</Link></p>
                         </div>
                     </form>
                 </div>

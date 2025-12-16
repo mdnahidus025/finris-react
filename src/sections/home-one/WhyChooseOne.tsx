@@ -48,7 +48,7 @@ const WhyChooseOne: React.FC = () => {
                                     </div>
                                     <div className="content">
                                         <p>
-                                            <Link to="/about">Innovative Solutions</Link>
+                                            <Link to="/inner/about">Innovative Solutions</Link>
                                         </p>
                                         <span>
                                             Cutting-edge approaches to keep your brand <br /> ahead.
@@ -62,7 +62,7 @@ const WhyChooseOne: React.FC = () => {
                                     </div>
                                     <div className="content">
                                         <p>
-                                            <Link to="/about">Creative Excellence</Link>
+                                            <Link to="/inner/about">Creative Excellence</Link>
                                         </p>
                                         <span>
                                             Unique and impactful design strategies with <br /> creative
@@ -77,7 +77,7 @@ const WhyChooseOne: React.FC = () => {
                                     </div>
                                     <div className="content">
                                         <p>
-                                            <Link to="/about">Custom Strategies</Link>
+                                            <Link to="/inner/about">Custom Strategies</Link>
                                         </p>
                                         <span>
                                             Tailored strategies: Custom solutions to meet <br /> your

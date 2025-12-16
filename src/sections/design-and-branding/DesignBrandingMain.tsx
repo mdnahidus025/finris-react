@@ -184,7 +184,7 @@ const DesignBrandingMain: React.FC = () => {
                                     Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                                 </p>
                                 <div className="services-details__contact-btn-box">
-                                    <Link to="/contact" className="services-details__contact-btn thm-btn">
+                                    <Link to="/inner/contact" className="services-details__contact-btn thm-btn">
                                         <i className="icon-right"></i> Send Message
                                     </Link>
                                 </div>

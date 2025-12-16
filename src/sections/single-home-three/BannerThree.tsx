@@ -63,7 +63,7 @@ const BannerThree: React.FC = () => {
                                         </div>
                                     </div>
                                     <div className="banner-two__btn-box">
-                                        <Link to="/about" className="banner-two__btn thm-btn thm-btn-two">
+                                        <Link to="/inner/about" className="banner-two__btn thm-btn thm-btn-two">
                                             <span className="icon-right"></span>
                                             Know More
                                         </Link>

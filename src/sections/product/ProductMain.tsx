@@ -97,7 +97,7 @@ const ProductMain: React.FC = () => {
                                                     </div>
 
                                                     <h4 className="product__all-title">
-                                                        <Link to="/product-details">{product.name}</Link>
+                                                        <Link to="/inner/product-details">{product.name}</Link>
                                                     </h4>
 
                                                     <p className="product__all-price">{product.price}</p>

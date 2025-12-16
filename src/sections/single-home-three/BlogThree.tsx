@@ -93,7 +93,7 @@ const BlogThree: React.FC = () => {
                 {/* Bottom Button */}
                 <div className="blog-two__bottom">
                     <div className="blog-two__btn-box-two">
-                        <Link to="/blog">
+                        <Link to="/inner/blog">
                             View More <span className="icon-right"></span>
                         </Link>
                     </div>

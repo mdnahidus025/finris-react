@@ -45,7 +45,7 @@ const BannerCommon: React.FC<BannerCommonProps> = ({
                             {
                                 breadcrumb2 ?
                                     <>
-                                        <li><Link to={breadcrumbLink}>{breadcrumb}</Link></li>
+                                        <li><Link to={`/inner${breadcrumbLink}`}>{breadcrumb}</Link></li>
                                         <li> <span></span> </li>
                                         <li>{breadcrumb2}</li>
                                     </>

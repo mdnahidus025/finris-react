@@ -20,7 +20,7 @@ const items: WelcomeItem[] = [
         img: welcomeImg1,
         iconClass: 'icon-software-development',
         title: 'Software Development',
-        link: '/services',
+        link: '/inner/services',
 
     },
     {
@@ -28,7 +28,7 @@ const items: WelcomeItem[] = [
         img: welcomeImg2,
         iconClass: 'icon-cybersecurity',
         title: 'Cyber security service',
-        link: '/services',
+        link: '/inner/services',
 
     },
     {
@@ -36,7 +36,7 @@ const items: WelcomeItem[] = [
         img: welcomeImg3,
         iconClass: 'icon-data-management',
         title: 'Database Management',
-        link: '/services',
+        link: '/inner/services',
 
     },
 ];

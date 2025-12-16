@@ -143,9 +143,6 @@ const WhyChooseInner: React.FC = () => {
                                     ))}
                                 </div>
                             </div>
-
-                            {/* Example Link */}
-                            {/* <Link to="/index2" className="theme-btn">Learn More</Link> */}
                         </div>
                     </div>
                 </div>

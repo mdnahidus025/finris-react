@@ -33,7 +33,7 @@ const CheckoutMain: React.FC = () => {
                         <div className="billing_details">
                             <div className="billing_title">
                                 <p>
-                                    Returning Customer? <span><Link to={"/login"}>Click here to Login</Link></span>
+                                    Returning Customer? <span><Link to={"/inner/login"}>Click here to Login</Link></span>
                                 </p>
                                 <h2>Billing details</h2>
                             </div>

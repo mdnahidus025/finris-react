@@ -29,7 +29,7 @@ const Header: React.FC = () => {
                                     <span className="main-menu__search searcher-toggler-box icon-search-1"></span>
                                 </div>
                                 <div className="main-menu__btn-box">
-                                    <Link to="/contact" className="thm-btn main-menu__btn">Contact Us</Link>
+                                    <Link to="/inner/contact" className="thm-btn main-menu__btn">Contact Us</Link>
                                 </div>
                                 <div className="main-menu__nav-sidebar-icon">
                                     <Link className="navSidebar-button" to="#" onClick={() => setIsSidebar(pre => !pre)}>

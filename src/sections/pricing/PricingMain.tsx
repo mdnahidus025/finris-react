@@ -94,7 +94,7 @@ const PricingMain: React.FC = () => {
                                             </ul>
                                         </div>
                                         <div className="pricing-one__btn-box">
-                                            <Link to={'/pricing'} className="pricing-one__btn thm-btn" >
+                                            <Link to={'/inner/pricing'} className="pricing-one__btn thm-btn" >
                                                 <span className="icon-right"></span> Know More
                                             </Link>
                                         </div>
@@ -116,7 +116,7 @@ const PricingMain: React.FC = () => {
                                             If you need any an custom packages
                                         </p>
                                         <div className="pricing-one__btn-box-two">
-                                            <Link to={'/contact'} className="pricing-one__btn-two thm-btn" >
+                                            <Link to={'/inner/contact'} className="pricing-one__btn-two thm-btn" >
                                                 <span className="icon-right"></span> Contact Now
                                             </Link>
                                         </div>
@@ -159,7 +159,7 @@ const PricingMain: React.FC = () => {
                                             </ul>
                                         </div>
                                         <div className="pricing-one__btn-box">
-                                            <Link to={'/pricing'} className="pricing-one__btn thm-btn" >
+                                            <Link to={'/inner/pricing'} className="pricing-one__btn thm-btn" >
                                                 <span className="icon-right"></span> Know More
                                             </Link>
                                         </div>
@@ -181,7 +181,7 @@ const PricingMain: React.FC = () => {
                                             If you need any an custom packages
                                         </p>
                                         <div className="pricing-one__btn-box-two">
-                                            <Link to={'/contact'} className="pricing-one__btn-two thm-btn" >
+                                            <Link to={'/inner/contact'} className="pricing-one__btn-two thm-btn" >
                                                 <span className="icon-right"></span> Contact Now
                                             </Link>
                                         </div>

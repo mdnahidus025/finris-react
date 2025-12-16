@@ -89,12 +89,12 @@ const HeaderThree: React.FC = () => {
                                         <span className="main-menu-two__search searcher-toggler-box icon-search-1"></span>
                                     </div>
                                     <div className="main-menu-two__cart-box">
-                                        <Link to="/cart" className="main-menu-two__cart icon-shopping-cart"></Link>
+                                        <Link to="/inner/cart" className="main-menu-two__cart icon-shopping-cart"></Link>
                                     </div>
                                 </div>
                             </div>
                             <div className="main-menu-two__btn-box">
-                                <Link to="/contact" className="thm-btn thm-btn-two main-menu-two__btn">
+                                <Link to="/inner/contact" className="thm-btn thm-btn-two main-menu-two__btn">
                                     Contact us
                                 </Link>
                             </div>

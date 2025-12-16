@@ -125,7 +125,7 @@ const AboutTwo: React.FC = () => {
                             <div className="about-two__bottom">
                                 <div className="about-two__btn-and-call-box">
                                     <div className="about-two__btn-box">
-                                        <Link to="/about" className="about-two__btn thm-btn thm-btn-two">
+                                        <Link to="/inner/about" className="about-two__btn thm-btn thm-btn-two">
                                             <span className="icon-right"></span> Know More
                                         </Link>
                                     </div>

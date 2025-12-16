@@ -76,7 +76,7 @@ const Details: React.FC = () => {
                         {/* Buttons */}
                         <div className="product-details__buttons">
                             <div className="product-details__buttons-1">
-                                <Link to="/wishlist" className="thm-btn">
+                                <Link to="/inner/wishlist" className="thm-btn">
                                     Add to Wishlist
                                     <span className="hover-btn hover-bx"></span>
                                     <span className="hover-btn hover-bx2"></span>
@@ -86,7 +86,7 @@ const Details: React.FC = () => {
                             </div>
 
                             <div className="product-details__buttons-2">
-                                <Link to="/cart" className="thm-btn">
+                                <Link to="/inner/cart" className="thm-btn">
                                     Add to Cart
                                     <span className="hover-btn hover-bx"></span>
                                     <span className="hover-btn hover-bx2"></span>

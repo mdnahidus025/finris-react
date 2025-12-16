@@ -35,7 +35,7 @@ const PricingInner: React.FC = () => {
                             ))}
                         </ul>
                         <div className="pricing-two__btn-box">
-                            <Link to="/pricing" className="pricing-two__btn thm-btn thm-btn-two">
+                            <Link to="/inner/pricing" className="pricing-two__btn thm-btn thm-btn-two">
                                 <span className="icon-plus1"></span> Choose Pricing
                             </Link>
                         </div>

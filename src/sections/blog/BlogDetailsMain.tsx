@@ -1,8 +1,6 @@
 import React from "react";
 import { Link } from "react-router";
 import BlogListSidebar from "./BlogListSidebar";
-
-// ✅ Import all images as variables
 import mainImg from "../../assets/images/blog/blog-details-img-1.jpg";
 import clientImg from "../../assets/images/blog/blog-details-client-img-1.jpg";
 import imgBox1 from "../../assets/images/blog/blog-details-img-box-img-1.jpg";
@@ -180,11 +178,11 @@ const BlogDetailsMain: React.FC = () => {
                                                 <img src={prevImg} alt="Prev Blog" />
                                             </div>
                                             <div className="blog-details__prev-content">
-                                                <Link to="/blog-details" className="blog-details__prev-btn">
+                                                <Link to="/inner/blog-details" className="blog-details__prev-btn">
                                                     <span className="icon-right"></span> Prev Blog
                                                 </Link>
                                                 <h3 className="blog-details__prev-title">
-                                                    <Link to="/blog-details">Strategies for Success in a Digital World</Link>
+                                                    <Link to="/inner/blog-details">Strategies for Success in a Digital World</Link>
                                                 </h3>
                                             </div>
                                         </div>
@@ -192,11 +190,11 @@ const BlogDetailsMain: React.FC = () => {
                                     <div className="col-xl-6">
                                         <div className="blog-details__next">
                                             <div className="blog-details__next-content">
-                                                <Link to="/blog-details" className="blog-details__next-btn">
+                                                <Link to="/inner/blog-details" className="blog-details__next-btn">
                                                     Next Blog <span className="icon-right"></span>
                                                 </Link>
                                                 <h3 className="blog-details__next-title">
-                                                    <Link to="/blog-details">The Power Role of AI in Enhancing Web Design</Link>
+                                                    <Link to="/inner/blog-details">The Power Role of AI in Enhancing Web Design</Link>
                                                 </h3>
                                             </div>
                                             <div className="blog-details__next-img">
@@ -228,7 +226,7 @@ const BlogDetailsMain: React.FC = () => {
                                                         quickly. I especially appreciate accessibility features.
                                                     </p>
                                                     <div className="comment-one__btn-box">
-                                                        <Link to="/blog-details" className="comment-one__btn thm-btn">
+                                                        <Link to="/inner/blog-details" className="comment-one__btn thm-btn">
                                                             <span className="icon-reply-arrow"></span> Reply
                                                         </Link>
                                                     </div>
@@ -262,7 +260,7 @@ const BlogDetailsMain: React.FC = () => {
                                                         designers.
                                                     </p>
                                                     <div className="comment-one__btn-box">
-                                                        <Link to="/blog-details" className="comment-one__btn thm-btn">
+                                                        <Link to="/inner/blog-details" className="comment-one__btn thm-btn">
                                                             <span className="icon-reply-arrow"></span> Reply
                                                         </Link>
                                                     </div>
