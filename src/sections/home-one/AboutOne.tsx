@@ -5,6 +5,7 @@ import aboutStar from '../../assets/images/shapes/about-one-star.png';
 import aboutImg1 from '../../assets/images/resources/about-one-img-1.jpg';
 import aboutImg2 from '../../assets/images/resources/about-one-img-2.jpg';
 import TextAnimation from '../../components/elements/TextAnimation';
+import { Link } from 'react-router';
 
 // Points data array
 const pointsColumn1 = [
@@ -102,9 +103,9 @@ const AboutOne: React.FC = () => {
                                 </div>
                                 <div className="about-one__btn-and-call-box">
                                     <div className="about-one__btn-box">
-                                        <a href="/about" className="about-one__btn thm-btn">
+                                        <Link to="/inner/about" className="about-one__btn thm-btn">
                                             <span className="icon-right"></span> Know More
-                                        </a>
+                                        </Link>
                                     </div>
                                     <div className="about-one__call">
                                         <div className="about-one__call-icon">
@@ -112,7 +113,7 @@ const AboutOne: React.FC = () => {
                                         </div>
                                         <div className="about-one__call-content">
                                             <h3 className="about-one__call-title">
-                                                <a href="/contact">Live Chat</a>
+                                                <Link to="/inner/contact">Live Chat</Link>
                                             </h3>
                                             <p className="about-one__call-sub-title">Connect us</p>
                                         </div>

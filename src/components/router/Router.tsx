@@ -105,10 +105,7 @@ const ROUTER = createBrowserRouter([
                   path: 'faq',
                   element: <Faq />
                },
-               {
-                  path: '404',
-                  element: <Error />
-               },
+
                {
                   path: "services",
                   element: <Service />
@@ -182,6 +179,10 @@ const ROUTER = createBrowserRouter([
                   element: <Contact />
                },
             ]
+         },
+         {
+            path: '404',
+            element: <Error />
          },
          {
             path: 'coming-soon',

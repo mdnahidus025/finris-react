@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { blogs } from "../../contents/blog/blog";
 import type { BlogPage } from "../../contents/blog/blogType";
+import { Link } from "react-router";
 
 const BlogMain: React.FC = () => {
     const [currentPage, setCurrentPage] = useState(1);
@@ -25,9 +26,9 @@ const BlogMain: React.FC = () => {
                                 <div className="blog-two__img">
                                     <img src={blog.image} alt={blog.title} />
                                     <div className="blog-two__plus">
-                                        <a href={blog.link}>
+                                        <Link to={blog.link}>
                                             <span className="icon-plus"></span>
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
 
@@ -48,16 +49,16 @@ const BlogMain: React.FC = () => {
                                         </ul>
 
                                         <h3 className="blog-two__title">
-                                            <a href={blog.link}>{blog.title}</a>
+                                            <Link to={blog.link}>{blog.title}</Link>
                                         </h3>
                                         <p className="blog-two__text">{blog.description}</p>
                                     </div>
 
                                     <div className="blog-two__read-more">
                                         <div className="blog-two__read-more-line"></div>
-                                        <a href={blog.link} className="blog-two__read-more-text">
+                                        <Link to={blog.link} className="blog-two__read-more-text">
                                             Read More
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>

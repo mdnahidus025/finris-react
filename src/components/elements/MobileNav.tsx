@@ -68,7 +68,7 @@ const MobileNav: React.FC = () => {
                             </ul>
                         </li>
 
-                        <li><Link onClick={closeMobileState} to="/about">About</Link></li>
+                        <li><Link onClick={closeMobileState} to="/inner/about">About</Link></li>
 
                         <li className="dropdown">
                             <Link to="#">
@@ -167,7 +167,7 @@ const MobileNav: React.FC = () => {
                             </ul>
                         </li>
 
-                        <li><Link onClick={closeMobileState} to="/contact">Contact</Link></li>
+                        <li><Link onClick={closeMobileState} to="/inner/contact">Contact</Link></li>
                     </ul>
                 </div>
 

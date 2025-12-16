@@ -75,7 +75,7 @@ const TeamDetailsMain: React.FC = () => {
                                         <li key={index}>
                                             <p>{item.label}:</p>
                                             {item.link ? (
-                                                <a href={item.link}>{item.value}</a>
+                                                <Link to={item.link}>{item.value}</Link>
                                             ) : (
                                                 <span>{item.value}</span>
                                             )}

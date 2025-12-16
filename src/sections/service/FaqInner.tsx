@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { motion } from "framer-motion"
 import BGFAQ from "../../assets/images/shapes/faq-shape-bg.png"
 import { accrodionItems1 } from '../../contents/faq/faq';
+import { Link } from 'react-router';
 const FaqInner: React.FC = () => {
     const [active, setActive] = useState(2)
     return (
@@ -25,8 +26,8 @@ const FaqInner: React.FC = () => {
                             <p className="faq-one__text">{`Our Frequently Asked Questions (FAQ) section provides clear and
                                 concise answers to common inquiries about our services, processes`}</p>
                             <div className="faq-one__btn-box">
-                                <a href="contact.html" className="faq-one__btn thm-btn thm-btn-two"><span
-                                    className="icon-right"></span> Contact Us</a>
+                                <Link to="/inner/contact" className="faq-one__btn thm-btn thm-btn-two"><span
+                                    className="icon-right"></span> Contact Us</Link>
                             </div>
                         </div>
                     </div>

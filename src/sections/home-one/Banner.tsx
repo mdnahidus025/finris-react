@@ -10,6 +10,7 @@ import satisfiedClient3 from '../../assets/images/resources/banner-one-satisfied
 import bannerMainImg from '../../assets/images/resources/banner-one-img-1.png';
 import TypingEffect from '../../components/elements/TypingEffect';
 import AdvanceCountUp from '../../components/elements/AdvanceCountUp';
+import { Link } from 'react-router';
 
 const Banner: React.FC = () => {
     return (
@@ -63,9 +64,9 @@ const Banner: React.FC = () => {
                             </p>
                             <div className="banner-one__btn-and-satisfied-client-box">
                                 <div className="banner-one__btn-box">
-                                    <a href="/contact" className="banner-one__btn thm-btn">
+                                    <Link to="/inner/contact" className="banner-one__btn thm-btn">
                                         <span className="icon-right"></span> Get Started
-                                    </a>
+                                    </Link>
                                 </div>
                                 <div className="banner-one__satisfied-client-box">
                                     <ul className="list-unstyled banner-one__satisfied-client-list">

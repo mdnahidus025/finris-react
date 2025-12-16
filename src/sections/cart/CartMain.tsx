@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import cartImg1 from "../../assets/images/shop/cart-page-img-1.jpg";
 import cartImg2 from "../../assets/images/shop/cart-page-img-2.jpg";
+import { Link } from "react-router";
 
 interface CartItem {
     id: number;
@@ -80,7 +81,7 @@ const CartMain: React.FC = () => {
                                                 <img src={item.image} alt={item.name} />
                                             </div>
                                             <h3>
-                                                <a href="/product-details">{item.name}</a>
+                                                <Link to="/inner/product-details">{item.name}</Link>
                                             </h3>
                                         </div>
                                     </td>
@@ -165,9 +166,9 @@ const CartMain: React.FC = () => {
                                 </a>
                             </div>
                             <div className="cart-page__buttons-2">
-                                <a href="/checkout" className="thm-btn">
+                                <Link to="/inner/checkout" className="thm-btn">
                                     Checkout
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </div>

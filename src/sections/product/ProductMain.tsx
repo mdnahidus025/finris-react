@@ -104,7 +104,7 @@ const ProductMain: React.FC = () => {
 
                                                     <div className="product__all-btn-box">
                                                         <Link
-                                                            to="/cart"
+                                                            to="/inner/cart"
                                                             className="thm-btn product__all-btn"
                                                         >
                                                             Add to Cart

@@ -6,11 +6,11 @@ interface Service {
     link: string;
 }
 const services: Service[] = [
-    { name: "Digital Marketing", link: "/digital-marketing" },
-    { name: "Web Design & Development", link: "/web-design-development" },
-    { name: "Search Engine Optimization", link: "/search-engine-optimization" },
-    { name: "Design & Branding", link: "/design-and-branding" },
-    { name: "App Development", link: "/app-development" },
+    { name: "Digital Marketing", link: "/inner/digital-marketing" },
+    { name: "Web Design & Development", link: "/inner/web-design-development" },
+    { name: "Search Engine Optimization", link: "/inner/search-engine-optimization" },
+    { name: "Design & Branding", link: "/inner/design-and-branding" },
+    { name: "App Development", link: "/inner/app-development" },
 ]
 const ServicesList: React.FC = () => {
     const PathName = useLocation().pathname;
@@ -22,7 +22,7 @@ const ServicesList: React.FC = () => {
                         <img src={moreIcon} alt={item.name} />
                     </div>
                     <p>
-                        <Link to={`/inner${item?.link}`}>{item.name}</Link>
+                        <Link to={item?.link}>{item.name}</Link>
                     </p>
                 </li>
             ))}

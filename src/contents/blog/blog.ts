@@ -2,7 +2,7 @@
 import blogPostImg1 from '../../assets/images/blog/blog-2-1.jpg';
 import blogPostImg2 from '../../assets/images/blog/blog-2-2.jpg';
 import blogPostImg3 from '../../assets/images/blog/blog-2-3.jpg';
-import type { BlogCarouselItem, BlogPage, BlogPost, BlogsListItem } from './blogType';
+import type { BlogCarouselItem, BlogOnePost, BlogPage, BlogPost, BlogsListItem } from './blogType';
 import blogImg1 from "../../assets/images/blog/blog-2-1.jpg"
 import blogImg2 from "../../assets/images/blog/blog-2-2.jpg"
 import blogImg3 from "../../assets/images/blog/blog-2-3.jpg"
@@ -28,7 +28,7 @@ import blogCarouselImg2 from "../../assets/images/blog/blog-1-2.jpg";
 import blogCarouselImg3 from "../../assets/images/blog/blog-1-3.jpg";
 import userImg1 from "../../assets/images/blog/blog-one-user-1-1.jpg";
 import userImg2 from "../../assets/images/blog/blog-one-user-1-2.jpg";
-import userImg3 from "../../assets/images/blog/blog-one-user-1-3.jpg";
+import userImg3 from "../../assets/images/blog/blog-one-user-1-3.jpg"; 
 export const blogPosts: BlogPost[] = [
     {
         id: 1,
@@ -290,3 +290,86 @@ export const blogCarouselData: BlogCarouselItem[] = [
         link: "/inner/blog-list",
     },
 ];
+
+
+export const blogOnePosts: BlogOnePost[] = [
+        {
+            id: 1,
+            image: blogCarouselImg1,
+            tags: ["Digital", "Technology"],
+            title: "Top Strategies for Effective Time Management",
+            text: "Discover actionable tips and techniques to enhance your productivity and manage your time more efficiently.",
+            author: {
+                name: "Michael Johnson",
+                image: userImg1
+            },
+            date: "August 15, 2025",
+            link: "/blog-details"
+        },
+        {
+            id: 2,
+            image: blogCarouselImg2,
+            tags: ["Digital", "Technology"],
+            title: "The Future of Technology Emerging Trends to Watch in 2025",
+            text: "Discover actionable tips and techniques to enhance your productivity and manage your time more efficiently.",
+            author: {
+                name: "Michael Johnson",
+                image: userImg2
+            },
+            date: "December 5, 2023",
+            link: "/blog-details"
+        },
+        {
+            id: 3,
+            image: blogCarouselImg3,
+            tags: ["Digital", "Technology"],
+            title: "Healthy Eating Made Simple Quick and Nutritious Recipes for",
+            text: "Discover actionable tips and techniques to enhance your productivity and manage your time more efficiently.",
+            author: {
+                name: "Michael Johnson",
+                image: userImg3
+            },
+            date: "June 22, 2025",
+            link: "/blog-details"
+        },
+        {
+            id: 4,
+            image: blogCarouselImg1,
+            tags: ["Digital", "Technology"],
+            title: "Top Strategies for Effective Time Management",
+            text: "Discover actionable tips and techniques to enhance your productivity and manage your time more efficiently.",
+            author: {
+                name: "Michael Johnson",
+                image: userImg1
+            },
+            date: "August 15, 2025",
+            link: "/blog-details"
+        },
+        {
+            id: 5,
+            image: blogCarouselImg2,
+            tags: ["Digital", "Technology"],
+            title: "The Future of Technology Emerging Trends to Watch in 2025",
+            text: "Discover actionable tips and techniques to enhance your productivity and manage your time more efficiently.",
+            author: {
+                name: "Michael Johnson",
+                image: userImg2
+            },
+            date: "December 5, 2023",
+            link: "/blog-details"
+        },
+        {
+            id: 6,
+            image: blogCarouselImg3,
+            tags: ["Digital", "Technology"],
+            title: "Healthy Eating Made Simple Quick and Nutritious Recipes for",
+            text: "Discover actionable tips and techniques to enhance your productivity and manage your time more efficiently.",
+            author: {
+                name: "Michael Johnson",
+                image: userImg3
+            },
+            date: "June 22, 2025",
+            link: "/blog-details"
+        }
+    ];
+

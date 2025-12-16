@@ -3,6 +3,7 @@ import wishlist1 from "../../assets/images/shop/wishlist-page-img-1.jpg";
 import wishlist2 from "../../assets/images/shop/wishlist-page-img-2.jpg";
 import wishlist3 from "../../assets/images/shop/wishlist-page-img-3.jpg";
 import wishlist4 from "../../assets/images/shop/wishlist-page-img-4.jpg";
+import { Link } from "react-router";
 
 interface WishlistItem {
     id: number;
@@ -45,9 +46,9 @@ const WishlistMain: React.FC = () => {
                                                 <p>${item.price.toFixed(2)}</p>
                                             </div>
                                             <div className="product-select">
-                                                <a className="thm-btn wishlist-page__btn" href="/product-details">
+                                                <Link className="thm-btn wishlist-page__btn" to="/inner/product-details">
                                                     <span className="icon-right"></span> Select Product
-                                                </a>
+                                                </Link>
                                             </div>
                                         </div>
                                     </td>

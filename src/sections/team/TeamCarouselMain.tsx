@@ -6,6 +6,7 @@ import { teamMembersTeamPage } from '../../contents/team/team';
 import type { TeamMember } from '../../contents/team/teamType';
 import socialShape1 from "../../assets/images/shapes/team-page-social-shape-1.png";
 import socialShape2 from "../../assets/images/shapes/team-page-social-shape-2.png";
+import { Link } from 'react-router';
 const TeamCarouselMain: React.FC = () => {
     return (
         <section className="team-carousel-page">
@@ -42,7 +43,7 @@ const TeamCarouselMain: React.FC = () => {
                                         </div>
                                         <div className="team-page__content">
                                             <h4 className="team-page__title">
-                                                <a href={member.link}>{member.name}</a>
+                                                <Link to={member.link}>{member.name}</Link>
                                             </h4>
                                             <p className="team-page__text">{member.position}</p>
                                             <div className="team-page__social">

@@ -3,6 +3,7 @@ import blogLp1 from "../../assets/images/blog/lp-1-1.jpg";
 import blogLp2 from "../../assets/images/blog/lp-1-2.jpg";
 import blogLp3 from "../../assets/images/blog/lp-1-3.jpg";
 import blogIcon from "../../assets/images/icon/sidebar-title-icon.png";
+import { Link } from 'react-router';
 
 interface Category {
     id: number;
@@ -28,10 +29,10 @@ const BlogListSidebar: React.FC = () => {
         alert(`Searching for "${searchTerm}"...`);
     };
     const categories: Category[] = [
-        { id: 1, name: "Web Design & Development", count: 15, link: "/blog-details" },
-        { id: 2, name: "Products Design", count: 20, link: "/blog-details", active: true },
-        { id: 3, name: "Artificial Intelligence", count: 42, link: "/blog-details" },
-        { id: 4, name: "Technology", count: 89, link: "/blog-details" },
+        { id: 1, name: "Web Design & Development", count: 15, link: "/inner/blog-details" },
+        { id: 2, name: "Products Design", count: 20, link: "/inner/blog-details", active: true },
+        { id: 3, name: "Artificial Intelligence", count: 42, link: "/inner/blog-details" },
+        { id: 4, name: "Technology", count: 89, link: "/inner/blog-details" },
     ];
 
     const recentPosts: RecentPost[] = [
@@ -40,21 +41,21 @@ const BlogListSidebar: React.FC = () => {
             image: blogLp1,
             title: "Adapting to Digital Marketing Trends: Staying Ahead of the Curve",
             date: "March 25, 2025",
-            link: "/blog-details",
+            link: "/inner/blog-details",
         },
         {
             id: 2,
             image: blogLp2,
             title: "Standing Out in a Competitive Market",
             date: "Aug 15, 2025",
-            link: "/blog-details",
+            link: "/inner/blog-details",
         },
         {
             id: 3,
             image: blogLp3,
             title: "The Importance of Accurate Performance Reporting",
             date: "July 22, 2025",
-            link: "/blog-details",
+            link: "/inner/blog-details",
         },
     ];
 
@@ -106,9 +107,9 @@ const BlogListSidebar: React.FC = () => {
                     <ul className="sidebar__category-list list-unstyled">
                         {categories.map((cat: Category) => (
                             <li key={cat.id} className={cat.active ? "active" : ""}>
-                                <a href={cat.link}>
+                                <Link to={cat.link}>
                                     {cat.name} <span>({cat.count})</span>
-                                </a>
+                                </Link>
                             </li>
                         ))}
                     </ul>
@@ -130,7 +131,7 @@ const BlogListSidebar: React.FC = () => {
                                 </div>
                                 <div className="sidebar__post-content">
                                     <h3>
-                                        <a href={post.link}>{post.title}</a>
+                                        <Link to={post.link}>{post.title}</Link>
                                     </h3>
                                     <p className="sidebar__post-date">
                                         <span className="fas fa-calendar-alt"></span> {post.date}

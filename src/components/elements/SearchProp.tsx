@@ -12,7 +12,7 @@ const SearchProp: React.FC = () => {
         const form = e.currentTarget;
         form.reset()
         setIsSearch(pre => !pre)
-        navigate("/blog")
+        navigate("/inner/blog")
     }
     return (
         <div className="search-popup">

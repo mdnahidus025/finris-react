@@ -14,6 +14,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import type { Swiper as SwiperType } from 'swiper';
 import { Autoplay, EffectFade, Navigation } from 'swiper/modules';
 import AdvanceCountUp from '../../components/elements/AdvanceCountUp';
+import { Link } from 'react-router';
 
 
 const Banner: React.FC = () => {
@@ -27,7 +28,7 @@ const Banner: React.FC = () => {
             titleHighlight: 'Your Business Success',
             description: 'We provide expert business consultancy services, offering strategic insights and tailored solutions to drive growth, improve efficiency, and navigate challenges.',
             buttonText: 'Get Started',
-            buttonLink: '/contact',
+            buttonLink: '/inner/contact',
             happyClients: 2000,
             positiveRating: 30
         },
@@ -37,7 +38,7 @@ const Banner: React.FC = () => {
             titleHighlight: 'Your Business Success',
             description: 'We provide expert business consultancy services, offering strategic insights and tailored solutions to drive growth, improve efficiency, and navigate challenges.',
             buttonText: 'Get Started',
-            buttonLink: '/contact',
+            buttonLink: '/inner/contact',
             happyClients: 3000,
             positiveRating: 25,
         },
@@ -47,7 +48,7 @@ const Banner: React.FC = () => {
             titleHighlight: 'Your Business Success',
             description: 'We provide expert business consultancy services, offering strategic insights and tailored solutions to drive growth, improve efficiency, and navigate challenges.',
             buttonText: 'Get Started',
-            buttonLink: '/contact',
+            buttonLink: '/inner/contact',
             happyClients: 4000,
             positiveRating: 35
         }
@@ -106,7 +107,7 @@ const Banner: React.FC = () => {
                                             <h2 className="main-slider__title">Simple Solutions <br /> for <span>Your Business <br />
                                                 Success</span></h2>
                                             <div className="main-slider__btn">
-                                                <a href="contact.html"><span className="icon-right"></span>Get Started</a>
+                                                <Link to="/inner/contact"><span className="icon-right"></span>Get Started</Link>
                                             </div>
                                         </div>
                                         <p className="main-slider__text">We provide expert business consultancy services,

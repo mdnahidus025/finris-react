@@ -42,4 +42,17 @@ export interface BlogCarouselItem {
     tags: string[];
     link: string;
 }
- 
+
+export interface BlogOnePost {
+    id: number;
+    image: string;
+    tags: string[];
+    title: string;
+    text: string;
+    author: {
+        name: string;
+        image: string;
+    };
+    date: string;
+    link: string;
+}

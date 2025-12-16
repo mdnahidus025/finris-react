@@ -2,115 +2,13 @@ import React, { useState } from 'react';
 import type { Swiper as SwiperType } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Autoplay } from 'swiper/modules';
-// Import images
 import starImg from "../../assets/images/shapes/blog-one-star.png";
-import blogImg1 from "../../assets/images/blog/blog-1-1.jpg";
-import blogImg2 from "../../assets/images/blog/blog-1-2.jpg";
-import blogImg3 from "../../assets/images/blog/blog-1-3.jpg";
-import userImg1 from "../../assets/images/blog/blog-one-user-1-1.jpg";
-import userImg2 from "../../assets/images/blog/blog-one-user-1-2.jpg";
-import userImg3 from "../../assets/images/blog/blog-one-user-1-3.jpg";
 import TextAnimation from '../../components/elements/TextAnimation';
-
-// Define blog post type
-interface BlogPost {
-    id: number;
-    image: string;
-    tags: string[];
-    title: string;
-    text: string;
-    author: {
-        name: string;
-        image: string;
-    };
-    date: string;
-    link: string;
-}
+import { blogOnePosts } from '../../contents/blog/blog';
+import type { BlogOnePost } from '../../contents/blog/blogType';
 
 const BlogOne: React.FC = () => {
     const [swiperInstance, setSwiperInstance] = useState<SwiperType | null>(null);
-    // Blog posts array
-    const blogPosts: BlogPost[] = [
-        {
-            id: 1,
-            image: blogImg1,
-            tags: ["Digital", "Technology"],
-            title: "Top Strategies for Effective Time Management",
-            text: "Discover actionable tips and techniques to enhance your productivity and manage your time more efficiently.",
-            author: {
-                name: "Michael Johnson",
-                image: userImg1
-            },
-            date: "August 15, 2025",
-            link: "/blog-details"
-        },
-        {
-            id: 2,
-            image: blogImg2,
-            tags: ["Digital", "Technology"],
-            title: "The Future of Technology Emerging Trends to Watch in 2025",
-            text: "Discover actionable tips and techniques to enhance your productivity and manage your time more efficiently.",
-            author: {
-                name: "Michael Johnson",
-                image: userImg2
-            },
-            date: "December 5, 2023",
-            link: "/blog-details"
-        },
-        {
-            id: 3,
-            image: blogImg3,
-            tags: ["Digital", "Technology"],
-            title: "Healthy Eating Made Simple Quick and Nutritious Recipes for",
-            text: "Discover actionable tips and techniques to enhance your productivity and manage your time more efficiently.",
-            author: {
-                name: "Michael Johnson",
-                image: userImg3
-            },
-            date: "June 22, 2025",
-            link: "/blog-details"
-        },
-        {
-            id: 4,
-            image: blogImg1,
-            tags: ["Digital", "Technology"],
-            title: "Top Strategies for Effective Time Management",
-            text: "Discover actionable tips and techniques to enhance your productivity and manage your time more efficiently.",
-            author: {
-                name: "Michael Johnson",
-                image: userImg1
-            },
-            date: "August 15, 2025",
-            link: "/blog-details"
-        },
-        {
-            id: 5,
-            image: blogImg2,
-            tags: ["Digital", "Technology"],
-            title: "The Future of Technology Emerging Trends to Watch in 2025",
-            text: "Discover actionable tips and techniques to enhance your productivity and manage your time more efficiently.",
-            author: {
-                name: "Michael Johnson",
-                image: userImg2
-            },
-            date: "December 5, 2023",
-            link: "/blog-details"
-        },
-        {
-            id: 6,
-            image: blogImg3,
-            tags: ["Digital", "Technology"],
-            title: "Healthy Eating Made Simple Quick and Nutritious Recipes for",
-            text: "Discover actionable tips and techniques to enhance your productivity and manage your time more efficiently.",
-            author: {
-                name: "Michael Johnson",
-                image: userImg3
-            },
-            date: "June 22, 2025",
-            link: "/blog-details"
-        }
-    ];
-
     return (
         <section className="blog-one">
             <div className="blog-one__star zoominout">
@@ -126,8 +24,8 @@ const BlogOne: React.FC = () => {
                         <span className="section-title__tagline">Our Blogs</span>
                     </div>
                     <h2 className="section-title__title title-animation">
-                        <TextAnimation text='Discover our latest news' textColor='black'/>
-                        <TextAnimation text='and updates now.'/> 
+                        <TextAnimation text='Discover our latest news' textColor='black' />
+                        <TextAnimation text='and updates now.' />
                     </h2>
                 </div>
                 <div className="blog-one__carousel owl-theme ">
@@ -158,7 +56,7 @@ const BlogOne: React.FC = () => {
                             },
                         }}
                     >
-                        {blogPosts.map((post: BlogPost) => (
+                        {blogOnePosts.map((post: BlogOnePost) => (
                             <SwiperSlide key={post.id}>
                                 <div className="item">
                                     <div className="blog-one__single">

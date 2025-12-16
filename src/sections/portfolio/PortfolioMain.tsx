@@ -53,9 +53,9 @@ const PortfolioMain: React.FC = () => {
                                             </div>
 
                                             <div className="portfolio-page__btn-box">
-                                                <a href={item.link} className="portfolio-page__btn thm-btn">
+                                                <Link to={item.link} className="portfolio-page__btn thm-btn">
                                                     <span className="icon-right"></span> View Project
-                                                </a>
+                                                </Link>
                                             </div>
                                         </div>
                                     </div>
