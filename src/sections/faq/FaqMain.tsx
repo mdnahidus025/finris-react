@@ -11,7 +11,6 @@ const FaqMain: React.FC = () => {
                     <div className="col-xl-6 col-lg-6">
                         <div className="faq-one__right">
                             <div className="accrodion-grp faq-one-accrodion" data-grp-name="faq-one-accrodion-1">
-
                                 {
                                     accrodionItems1.map(item => <div key={item?.id} className={`accrodion ${active === item?.id ? '' : 'active'}`}>
                                         <div className="accrodion-title" onClick={() => setActive(pre => pre === item?.id ? 0 : item?.id)}>

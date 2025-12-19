@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router";
 import LeftSidebar from "./LeftSidebar";
-
-// ✅ Import product images
+ 
 import p1 from "../../assets/images/shop/shop-product-1-1.jpg";
 import p2 from "../../assets/images/shop/shop-product-1-2.jpg";
 import p3 from "../../assets/images/shop/shop-product-1-3.jpg";
@@ -12,8 +11,7 @@ import p6 from "../../assets/images/shop/shop-product-1-6.jpg";
 import p7 from "../../assets/images/shop/shop-product-1-7.jpg";
 import p8 from "../../assets/images/shop/shop-product-1-8.jpg";
 import p9 from "../../assets/images/shop/shop-product-1-9.jpg";
-
-// ✅ Define product type
+ 
 interface Product {
     id: number;
     name: string;

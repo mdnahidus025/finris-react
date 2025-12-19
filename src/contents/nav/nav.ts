@@ -1,7 +1,5 @@
 import type { LINK, NavItem } from "../footer/footerType";
 
-
-
 export const HOME_LINKS: LINK[] = [
     { id: 1, link: "/", value: "Home One" },
     { id: 2, link: "/index2", value: "Home Two" },
@@ -24,7 +22,7 @@ export const PAGES_LINKS: LINK[] = [
     { id: 9, link: "/inner/gallery", value: "Gallery" },
     { id: 10, link: "/inner/faq", value: "FAQs" },
     { id: 11, link: "/inner/404", value: "404 Error" },
-    { id: 12, link: "/inner/coming-soon", value: "Coming Soon" },
+    { id: 12, link: "/coming-soon", value: "Coming Soon" },
 ];
 
 // 🔹 Services Menu

@@ -1,9 +1,9 @@
 import React from 'react';
 import { testimonialsPage } from '../../contents/testimonials/testimonials';
 import type { TestimonialPage } from '../../contents/testimonials/type';
-
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Navigation, Pagination } from 'swiper/modules';
+
 const TestimonialCarouselMain: React.FC = () => {
     return (
         <section className="testimonial-carousel-page">
@@ -32,7 +32,6 @@ const TestimonialCarouselMain: React.FC = () => {
                             <SwiperSlide key={t.id}>
                                 <div className="item">
                                     <div className="testimonial-one__single">
-                                        {/* ✅ Client Info */}
                                         <div className="testimonial-one__client-info">
                                             <div className="testimonial-one__client-img-box">
                                                 <div className="testimonial-one__client-img">
@@ -50,12 +49,8 @@ const TestimonialCarouselMain: React.FC = () => {
                                                     {t.role}
                                                 </span>
                                             </div>
-                                        </div>
-
-                                        {/* ✅ Testimonial Text */}
+                                        </div> 
                                         <p className="testimonial-one__text">{t.text}</p>
-
-                                        {/* ✅ Rating Stars (React way) */}
                                         <div className="testimonial-one__rating">
                                             {[...Array(5)].map((_, i) => (
                                                 <span
@@ -75,7 +70,6 @@ const TestimonialCarouselMain: React.FC = () => {
                             </SwiperSlide>
                         ))}
                     </Swiper>
-
                 </div>
             </div>
         </section >
