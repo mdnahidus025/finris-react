@@ -187,7 +187,7 @@ const Footer: React.FC = () => {
                             <div className="site-footer__bottom-inner">
                                 <div className="site-footer__copyright">
                                     <p className="site-footer__copyright-text">
-                                        &copy; 2025 Finris By{" "}
+                                        &copy; 2026 Finris By
                                         <a
                                             target="_blank"
                                             rel="noreferrer"
